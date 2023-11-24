@@ -66,3 +66,25 @@ bottomNavItems.forEach((item, index) => {
         bottomMove.style.left = index * 25 + '%'
     }
 })
+
+document.addEventListener('DOMContentLoaded', function () {
+    const burgerMenu = document.querySelector('.burger-menu');
+    const navLinks = document.querySelector('.nav-links');
+
+    burgerMenu.addEventListener('click', function () {
+        navLinks.classList.toggle('active');
+        toggleBars();
+    });
+
+    function toggleBars() {
+        const bars = document.querySelectorAll('.bar');
+        bars.forEach(bar => bar.classList.toggle('change'));
+    }
+
+    window.addEventListener('resize', function () {
+        if (window.innerWidth > 600) {
+            navLinks.classList.remove('active');
+            toggleBars();
+        }
+    });
+});

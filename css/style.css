@@ -247,6 +247,9 @@ section {
     display: none;
 }
 
+
+
+
 /* ANIMATION */
 
 .bagiankiri {
@@ -525,4 +528,47 @@ section {
     .h-xs {
         display: none;
     }
+}
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+.navbar {
+    background-color: #333;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.burger-menu {
+    cursor: pointer;
+    display: none;
+}
+
+.bar {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
 }
